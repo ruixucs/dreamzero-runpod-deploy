@@ -1,0 +1,43 @@
+# DreamZero-tuned joint-impedance controller for Deoxys.
+#
+# Why this file exists:
+#   The stock Deoxys joint-impedance-controller.yml (kp=[100,100,100,100,75,150,50],
+#   time_fraction=0.3) is too stiff and the interpolator is too "snappy" for the
+#   24-step action chunks streamed at 15 Hz by DreamZero. Symptoms with the stock
+#   config: shaky tracking, joint torque spikes at chunk boundaries.
+#
+# Reference points used to derive these gains:
+#   - sim-evals/IsaacLab nvidia_droid.py: ImplicitActuator stiffness=400, damping=80
+#     (note: IsaacLab "stiffness" maps roughly to Nm/rad as well, but the actuation
+#      pipeline differs. We empirically scale to ~20% for libfranka real hardware
+#      to keep the joint-impedance behaviour gentle.)
+#   - DROID dataset is collected at 15 Hz with Polymetis-style impedance, so the
+#     real robot is *not* tracking like a hard position servo.
+#
+# If you observe lag (target reached late): bump kp by ~50% and proportionally kd.
+# If you observe oscillation: halve kp.
+
+controller_type: JOINT_IMPEDANCE
+
+is_delta: false
+
+traj_interpolator_cfg:
+  # LINEAR is fine for 15 Hz streamed targets; bump time_fraction to 1.0 so the
+  # interpolator fully covers the 1/CONTROL_HZ tick instead of the default 0.3
+  # (which would leave the robot idle for 70% of each tick).
+  traj_interpolator_type: LINEAR_JOINT_POSITION
+  time_fraction: 1.0
+
+# Per-joint PD gains (Nm/rad and Nm·s/rad). Joint 6 is slightly higher because
+# Franka joint 6 carries more downstream inertia in many DROID poses.
+joint_kp: [80., 80., 80., 80., 60., 100., 40.]
+joint_kd: [16., 16., 16., 16.,  6.,  10.,  4.]
+
+# Velocity smoothing for the state estimator the impedance controller reads.
+state_estimator_cfg:
+  is_estimation: true
+  state_estimator_type: EXPONENTIAL_SMOOTHING
+  alpha_q: 0.9
+  alpha_dq: 0.9
+  alpha_eef: 1.0
+  alpha_eef_vel: 1.0

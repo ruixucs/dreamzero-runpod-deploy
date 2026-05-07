@@ -1,0 +1,79 @@
+DreamZero RunPod Deploy
+=======================
+
+This repository is a snapshot redistribution and extension of:
+
+  DreamZero — NVIDIA GEAR Lab
+  Source: https://github.com/dreamzero0/dreamzero
+  Copyright (c) 2025 NVIDIA Corporation
+  Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Upstream snapshot
+-----------------
+The following directories and files are derived from the upstream
+project, redistributed without modification:
+
+  server/                        (entire tree, includes eval_utils, groot,
+                                  scripts, docs, debug_image,
+                                  socket_test_optimized_AR.py,
+                                  test_client_AR.py)
+  pyproject.toml                 (top-level)
+  LICENSE                        (Apache-2.0 text)
+  COPYRIGHT                      (NVIDIA copyright notice)
+
+Snapshot taken at upstream commit:
+  ab790c1 ("Update architecture differences in WAN22_BACKBONE.md")
+
+To diff against the original upstream, clone
+  https://github.com/dreamzero0/dreamzero.git
+and compare to server/.
+
+New contributions in this repository
+------------------------------------
+The following files are new, authored for this RunPod deployment, and
+released under the same Apache-2.0 license:
+
+  README.md
+  NOTICE                         (this file)
+  client/                        (entire tree)
+    README.md
+    deoxys_client.py
+    robot_client_template.py
+    deoxys_configs/dreamzero-joint-impedance.yml
+    eval_utils/                  (subset copy of upstream server/eval_utils,
+                                  retained for client convenience; same
+                                  license as upstream)
+  deployment/
+    activate.sh
+    setup_runpod.sh
+    start_server.sh
+  docs/
+    01_deployment_runpod.md
+    02_protocol_reference.md
+    03_research_findings.md
+    04_client_integration.md
+  runs/                          (sample server log + MP4 outputs from a
+                                  successful inference session)
+  .gitignore
+
+The new contributions reference, but do not redistribute, the following
+external dependencies:
+
+  - GEAR-Dreams/DreamZero-DROID model checkpoint (Hugging Face,
+    cc-by-nc-4.0; downloaded at setup time, NOT included in this repo)
+  - Wan-AI/Wan2.1-I2V-14B-480P backbone (Hugging Face;
+    auto-downloaded by the inference server on first launch)
+  - UT-Austin-RPL/deoxys_control (Apache-2.0; client-side dependency,
+    NOT vendored)
+
+Researched but not redistributed
+--------------------------------
+The DreamZero gripper / action / control conventions documented in
+docs/03_research_findings.md were derived in part by reading code from:
+
+  - arhanjain/sim-evals          (Apache-2.0)
+  - droid-dataset/droid          (MIT)
+  - UT-Austin-RPL/deoxys_control (Apache-2.0)
+
+We cite specific files and line numbers in that document; we do not
+redistribute their code here.

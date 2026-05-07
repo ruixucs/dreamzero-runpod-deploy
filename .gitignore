@@ -1,0 +1,155 @@
+# ── Inherited from upstream dreamzero0/dreamzero ────────────────────────────
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+wandb/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.swp
+*.swo
+gear_working_dir/
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Flask / Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+
+# Editor
+.vscode/
+.cursor/
+.cursor*
+.claude/
+CLAUDE.md
+.idea/
+
+# Sphinx
+docs/_build/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# UV / pip / pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+__pypackages__/
+
+# Mypy / pyright / ruff
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+pyrightconfig.json
+
+# Mac
+.DS_Store
+
+# Cython debug symbols
+cython_debug/
+
+# Mujoco
+MUJOCO_LOG.TXT
+
+# misc upstream
+*.code-workspace
+batch_*.sh
+logs_*/
+*logs_rl*
+out/
+recordings/
+*.npz
+*.nbize.py
+osmo/
+source/
+sim_dependencies/
+playground/
+episode_data/
+third_parties/
+*.rdb
+dump.rdb
+download_model.py
+.dockerignore
+plots/
+sysid_data/
+isaac_data/
+inputs/
+offline_open_loop_eval_plots/
+video_pred_output*/
+
+# ── Project-specific (RunPod deploy) ────────────────────────────────────────
+# Local environment & caches
+.venv/
+.cache/
+
+# Logs (we ship a single trimmed sample under runs/server.log.tail)
+logs/
+!runs/server.log.tail
+
+# Model checkpoints (61 GB; downloaded by setup script)
+checkpoints/
+*.safetensors
+*.pth
+*.pt
+
+# Generated MP4 outputs from inference runs (we explicitly include 1-2
+# representative samples under runs/sample_outputs/, see whitelist below)
+real_world_eval_gen_*/
+
+# upstream listed runs/ globally; we want most of it ignored EXCEPT the
+# committed evidence under runs/sample_outputs/ and runs/server.log.tail
+runs/
+!runs/
+!runs/sample_outputs/
+!runs/sample_outputs/**
+!runs/server.log.tail
+!runs/README.md

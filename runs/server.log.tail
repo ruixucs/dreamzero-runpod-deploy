@@ -1,0 +1,500 @@
+INFO:root:Connection from ('127.0.0.1', 45300) opened
+INFO:root:Connection from ('127.0.0.1', 45300) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 45310) opened
+INFO:root:Connection from ('127.0.0.1', 45310) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 45326) opened
+INFO:__main__:Session changed from '7fd24d70-f0a8-40ab-840a-fd363a6da996' to 'd163464b-165e-4dd5-910a-9727370f6c75', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.764 seconds, Transform: 0.009 seconds, Model: 2.753 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.31 seconds, Diffusion 2.55 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.957 seconds, Transform: 0.012 seconds, Model: 2.944 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.75 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.163 seconds, Transform: 0.007 seconds, Model: 3.155 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000002_05_06_20_36_35_n3.mp4
+INFO:root:Connection from ('127.0.0.1', 45326) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 47238) opened
+INFO:__main__:Session changed from 'd163464b-165e-4dd5-910a-9727370f6c75' to 'f6cb6258-d98b-42e4-9822-fa89dd81f8d0', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.771 seconds, Transform: 0.009 seconds, Model: 2.760 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.97 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.57 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.978 seconds, Transform: 0.009 seconds, Model: 2.967 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.18 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.76 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.194 seconds, Transform: 0.007 seconds, Model: 3.186 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.41 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.96 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.419 seconds, Transform: 0.011 seconds, Model: 3.407 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.77 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.37 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.778 seconds, Transform: 0.010 seconds, Model: 2.768 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000003_05_06_20_39_13_n5.mp4
+INFO:root:Connection from ('127.0.0.1', 47238) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 55826) opened
+INFO:__main__:Session changed from 'f6cb6258-d98b-42e4-9822-fa89dd81f8d0' to 'd44f00af-b2a6-4c14-bc31-5aa4de406321', resetting state
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.77 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.778 seconds, Transform: 0.009 seconds, Model: 2.768 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.95 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.56 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.964 seconds, Transform: 0.011 seconds, Model: 2.952 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.17 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.75 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.182 seconds, Transform: 0.006 seconds, Model: 3.174 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.39 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.95 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.406 seconds, Transform: 0.011 seconds, Model: 3.394 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.755 seconds, Transform: 0.006 seconds, Model: 2.748 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000004_05_06_20_40_35_n5.mp4
+INFO:root:Connection from ('127.0.0.1', 55826) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 52158) opened
+INFO:__main__:Session changed from 'd44f00af-b2a6-4c14-bc31-5aa4de406321' to '45d801cd-d4cb-4bac-aa78-dae9bf60bbe4', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.761 seconds, Transform: 0.009 seconds, Model: 2.751 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.55 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.956 seconds, Transform: 0.009 seconds, Model: 2.945 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.14 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.73 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.155 seconds, Transform: 0.008 seconds, Model: 3.146 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000005_05_06_20_47_46_n3.mp4
+INFO:root:Connection from ('127.0.0.1', 52158) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 44622) opened
+INFO:__main__:Session changed from '45d801cd-d4cb-4bac-aa78-dae9bf60bbe4' to 'd99d7d42-3529-45fb-86f1-8f6656d7f525', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.758 seconds, Transform: 0.009 seconds, Model: 2.747 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000006_05_06_21_46_50_n1.mp4
+INFO:__main__:Session changed from 'd99d7d42-3529-45fb-86f1-8f6656d7f525' to '61c75478-366f-4a3b-b265-c853b7310f99', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.749 seconds, Transform: 0.009 seconds, Model: 2.739 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000007_05_06_21_46_54_n1.mp4
+INFO:__main__:Session changed from '61c75478-366f-4a3b-b265-c853b7310f99' to 'aea8a65d-46a7-42c5-b863-8458ea940558', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.768 seconds, Transform: 0.007 seconds, Model: 2.760 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000008_05_06_21_46_58_n1.mp4
+INFO:__main__:Session changed from 'aea8a65d-46a7-42c5-b863-8458ea940558' to 'a694a637-ecd7-4fcf-842a-8c4a0b905c17', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.765 seconds, Transform: 0.012 seconds, Model: 2.752 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000009_05_06_21_47_01_n1.mp4
+INFO:root:Connection from ('127.0.0.1', 44622) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 42318) opened
+INFO:__main__:Session changed from 'a694a637-ecd7-4fcf-842a-8c4a0b905c17' to '87c19680-0f25-4acb-a16e-923dc40b6e9a', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.763 seconds, Transform: 0.009 seconds, Model: 2.753 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.96 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.56 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.974 seconds, Transform: 0.013 seconds, Model: 2.960 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.17 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.76 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.180 seconds, Transform: 0.008 seconds, Model: 3.171 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000010_05_06_22_04_20_n3.mp4
+INFO:root:Connection from ('127.0.0.1', 42318) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 58404) opened
+INFO:__main__:Session changed from '87c19680-0f25-4acb-a16e-923dc40b6e9a' to 'd85cf383-63fc-4fa9-bd35-be54f62cb940', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.771 seconds, Transform: 0.013 seconds, Model: 2.757 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.93 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.54 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.945 seconds, Transform: 0.010 seconds, Model: 2.935 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.162 seconds, Transform: 0.009 seconds, Model: 3.152 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000011_05_06_22_23_36_n3.mp4
+INFO:root:Connection from ('127.0.0.1', 58404) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 34028) opened
+INFO:root:Connection from ('127.0.0.1', 34028) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 53812) opened
+INFO:__main__:Session changed from 'd85cf383-63fc-4fa9-bd35-be54f62cb940' to '59e75abd-1071-4036-827a-6c2ad353966c', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.34 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.750 seconds, Transform: 0.010 seconds, Model: 2.739 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.93 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.54 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.941 seconds, Transform: 0.009 seconds, Model: 2.932 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000012_05_06_23_46_28_n2.mp4
+INFO:root:Connection from ('127.0.0.1', 53812) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 50726) opened
+INFO:__main__:Session changed from '59e75abd-1071-4036-827a-6c2ad353966c' to 'e1ab782d-0c47-493e-a049-b880b7ff45a6', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.77 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.778 seconds, Transform: 0.008 seconds, Model: 2.769 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000013_05_06_23_54_12_n1.mp4
+INFO:root:Connection from ('127.0.0.1', 50726) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 46620) opened
+INFO:__main__:Session changed from 'e1ab782d-0c47-493e-a049-b880b7ff45a6' to '79a3e274-20cf-4294-8870-6ce0ef8f059b', resetting state
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.20 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.773 seconds, Transform: 0.009 seconds, Model: 2.763 seconds, Untransform: 0.001 seconds
+INFO:root:Connection from ('127.0.0.1', 46620) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 39520) opened
+INFO:__main__:Session changed from '79a3e274-20cf-4294-8870-6ce0ef8f059b' to 'bfbe763c-53e9-4916-9c41-6d2ea67c731d', resetting state
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000014_05_07_00_01_34_n1.mp4
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.34 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.752 seconds, Transform: 0.008 seconds, Model: 2.743 seconds, Untransform: 0.001 seconds
+INFO:root:Connection from ('127.0.0.1', 39520) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 53530) opened
+INFO:__main__:Session changed from 'bfbe763c-53e9-4916-9c41-6d2ea67c731d' to '2c0ad8dd-3125-48a0-9281-7860cd5b2c6b', resetting state
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000015_05_07_00_02_09_n1.mp4
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.34 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.751 seconds, Transform: 0.008 seconds, Model: 2.742 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000016_05_07_00_02_14_n1.mp4
+INFO:root:Connection from ('127.0.0.1', 53530) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 46644) opened
+INFO:root:Connection from ('127.0.0.1', 46644) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 57588) opened
+INFO:__main__:Session changed from '2c0ad8dd-3125-48a0-9281-7860cd5b2c6b' to '81ef2d7f-ecc4-4fd6-ac12-46daf1a2b784', resetting state
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.34 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.754 seconds, Transform: 0.010 seconds, Model: 2.743 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.31 seconds, Diffusion 2.54 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.948 seconds, Transform: 0.010 seconds, Model: 2.937 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.166 seconds, Transform: 0.009 seconds, Model: 3.156 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.38 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.95 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.396 seconds, Transform: 0.010 seconds, Model: 3.385 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.761 seconds, Transform: 0.008 seconds, Model: 2.751 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000017_05_07_00_55_36_n5.mp4
+INFO:root:Connection from ('127.0.0.1', 57588) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 60636) opened
+INFO:__main__:Session changed from '81ef2d7f-ecc4-4fd6-ac12-46daf1a2b784' to '2e4addd9-3565-4c23-80a6-5ad95508f4e3', resetting state
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.34 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.746 seconds, Transform: 0.009 seconds, Model: 2.736 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.93 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.54 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.944 seconds, Transform: 0.009 seconds, Model: 2.934 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.166 seconds, Transform: 0.010 seconds, Model: 3.155 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.38 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.94 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.387 seconds, Transform: 0.008 seconds, Model: 3.377 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.73 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.738 seconds, Transform: 0.008 seconds, Model: 2.729 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.54 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.945 seconds, Transform: 0.007 seconds, Model: 2.936 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.165 seconds, Transform: 0.009 seconds, Model: 3.155 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.37 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.93 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.382 seconds, Transform: 0.010 seconds, Model: 3.371 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.74 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.752 seconds, Transform: 0.009 seconds, Model: 2.741 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000018_05_07_00_57_29_n10.mp4
+INFO:root:Connection from ('127.0.0.1', 60636) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 35324) opened
+INFO:__main__:Session changed from '2e4addd9-3565-4c23-80a6-5ad95508f4e3' to 'c64928c0-61fb-43a2-a85e-52161a2aca9e', resetting state
+videos.shape[2] == 1, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.770 seconds, Transform: 0.011 seconds, Model: 2.758 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.55 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.961 seconds, Transform: 0.013 seconds, Model: 2.947 seconds, Untransform: 0.002 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.15 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.166 seconds, Transform: 0.010 seconds, Model: 3.155 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.37 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.93 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.380 seconds, Transform: 0.010 seconds, Model: 3.370 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.75 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.35 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.757 seconds, Transform: 0.009 seconds, Model: 2.747 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.94 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.55 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.950 seconds, Transform: 0.010 seconds, Model: 2.940 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.16 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.74 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.170 seconds, Transform: 0.009 seconds, Model: 3.160 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.37 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.94 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.388 seconds, Transform: 0.010 seconds, Model: 3.376 seconds, Untransform: 0.002 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000019_05_07_00_59_30_n8.mp4
+INFO:root:Connection from ('127.0.0.1', 35324) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 60726) opened
+INFO:root:Connection from ('127.0.0.1', 60726) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 51018) opened
+INFO:root:Connection from ('127.0.0.1', 51018) closed
+INFO:websockets.server:connection open
+INFO:root:Connection from ('127.0.0.1', 48012) opened
+INFO:__main__:Session changed from 'c64928c0-61fb-43a2-a85e-52161a2aca9e' to 'ee463bdf-fb62-46ee-a3a1-2e08a4c9c6e3', resetting state
+language changed, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 1, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.20 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.02 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.777 seconds, Transform: 0.010 seconds, Model: 2.765 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.95 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.32 seconds, Diffusion 2.55 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.958 seconds, Transform: 0.010 seconds, Model: 2.947 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.16 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.34 seconds, Diffusion 2.75 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.173 seconds, Transform: 0.009 seconds, Model: 3.162 seconds, Untransform: 0.001 seconds
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 3.39 seconds, Text Encoder 0.02 seconds, Image Encoder 0.00 seconds, VAE 0.05 seconds, KV Cache Creation 0.36 seconds, Diffusion 2.95 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 3.403 seconds, Transform: 0.010 seconds, Model: 3.392 seconds, Untransform: 0.001 seconds
+current_start_frame >= local_attn_size, reset current_start_frame to 0
+videos shape torch.Size([1, 3, 4, 352, 640]) 33
+Time taken: Total 2.76 seconds, Text Encoder 0.02 seconds, Image Encoder 0.17 seconds, VAE 0.00 seconds, KV Cache Creation 0.19 seconds, Diffusion 2.36 seconds, DIT Compute Steps 8 steps, Scheduler 0.01 seconds
+relative_action_per_horizon False
+last_state (1, 1, 7) unnormalized_action[action_key] (1, 24, 7)
+Inference Time: Total 2.767 seconds, Transform: 0.009 seconds, Model: 2.757 seconds, Untransform: 0.001 seconds
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+INFO:__main__:Saved video on reset to: /workspace/dreamzero/checkpoints/real_world_eval_gen_20260506_0/DreamZero-DROID/000020_05_07_01_15_54_n5.mp4
+INFO:root:Connection from ('127.0.0.1', 48012) closed
