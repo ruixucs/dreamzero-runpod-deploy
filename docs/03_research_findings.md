@@ -296,8 +296,8 @@ For anyone wanting to reverse-engineer further, here's where each fact comes fro
 
 | File | What's there |
 |---|---|
-| [`server/checkpoints/DreamZero-DROID/experiment_cfg/metadata.json`](../server/checkpoints/DreamZero-DROID/experiment_cfg/metadata.json) (not in git, downloaded by setup script) | Per-key statistics (mean/std/q01/q99) and modality schemas |
-| [`server/checkpoints/DreamZero-DROID/experiment_cfg/conf.yaml`](../server/checkpoints/DreamZero-DROID/experiment_cfg/conf.yaml) (same) | `relative_action: true`, `image_resolution_*`, `action_horizon: 24`, `num_frames: 33` |
+| `server/checkpoints/DreamZero-DROID/experiment_cfg/metadata.json` (not in git; downloaded by `setup_runpod.sh` from the HF model repo) | Per-key statistics (mean/std/q01/q99) and modality schemas |
+| `server/checkpoints/DreamZero-DROID/experiment_cfg/conf.yaml` (same) | `relative_action: true`, `image_resolution_*`, `action_horizon: 24`, `num_frames: 33` |
 | [`server/groot/vla/model/n1_5/sim_policy.py`](../server/groot/vla/model/n1_5/sim_policy.py) | Server's apply() that converts relative→absolute |
 | [`server/socket_test_optimized_AR.py`](../server/socket_test_optimized_AR.py) | The actual server entry; `ARDroidRoboarenaPolicy` does frame buffering and obs/action conversion |
 | [`server/eval_utils/policy_server.py`](../server/eval_utils/policy_server.py) | `PolicyServerConfig` dataclass + WS framing |

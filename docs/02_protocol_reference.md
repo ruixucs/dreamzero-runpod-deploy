@@ -128,7 +128,7 @@ layout:
 Important properties:
 
 1. **All 24 actions must be executed** before sending the next inference request. The model is open-loop within a chunk.
-2. **Joint actions are absolute, not delta** — even though the model predicts deltas internally, the server adds the last reported state to convert to absolute. See [§5.1](#51-action-semantics).
+2. **Joint actions are absolute, not delta** — even though the model predicts deltas internally, the server adds the last reported state to convert to absolute. See [§5.1](#51-action-semantics-server-returns-absolute-joint-targets).
 3. **Joint actions are in radians** matching DROID's joint convention. They lie within Franka soft limits.
 4. **Gripper action is in [0, 1]**, with the **same** convention as `observation/gripper_position`: 0 = open, 1 = closed. See [§5.2](#52-gripper-state).
 
