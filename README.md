@@ -6,7 +6,9 @@ End-to-end recipe for serving NVIDIA's **[DreamZero-DROID](https://huggingface.c
 > Paper: [arXiv:2602.15922](https://arxiv.org/abs/2602.15922).
 > Project page: [dreamzero0.github.io](https://dreamzero0.github.io/).
 
-This repository captures everything needed to bring up the inference server on a fresh RunPod pod (we used H200) and connect a real Franka Panda over WebSocket. It also documents the **non-obvious conventions** we had to dig out of multiple codebases (gripper direction, action semantics, control-mode tuning, frame schedule) so the next person doesn't have to.
+This repository captures everything needed to bring up the inference server on a fresh RunPod pod (validated on **H200** and **B200**) and connect a real Franka Panda over WebSocket. It also documents the **non-obvious conventions** we had to dig out of multiple codebases (gripper direction, action semantics, control-mode tuning, frame schedule) so the next person doesn't have to.
+
+> **B200 (Blackwell) second deploy:** see [`docs/05_deployment_b200.md`](docs/05_deployment_b200.md) for warm-up timelines, prefetch, and Python/flash-attn gotchas.
 
 ---
 
@@ -14,12 +16,12 @@ This repository captures everything needed to bring up the inference server on a
 
 | Resource | Minimum | What We Tested |
 |---|---|---|
-| GPU | H100 80 GB | H200 143 GB |
-| VRAM in use | ~45 GB | 44.6 GB |
-| Disk (persistent volume) | 200 GB | RunPod `/workspace` ~300 TB |
+| GPU | H100 80 GB | H200 143 GB, **B200 183 GB** |
+| VRAM in use | ~45 GB | 44.7 GB (B200) |
+| Disk (persistent volume) | 200 GB | RunPod `/workspace` (persistent) |
 | RAM | 64 GB | 2 TB |
-| CUDA | 12.8+ | 12.8 |
-| Python | 3.11 | 3.11.13 |
+| CUDA | 12.8+ | 12.8 toolkit / 13.0 driver |
+| Python | 3.11 | 3.11.13 venv or **3.12 system** (B200) |
 
 ---
 
@@ -31,18 +33,23 @@ cd /workspace
 git clone https://github.com/<YOU>/dreamzero-runpod-deploy.git
 cd dreamzero-runpod-deploy
 
-# 1. Install everything (creates venv, installs server, downloads 61 GB checkpoint)
+# 1. (Recommended) Prefetch Wan2.1 + DreamZero-DROID (~138 GB total, idempotent)
+bash deployment/prefetch_models.sh
+
+# 2. Install deps + verify GPU (also downloads checkpoint if prefetch was skipped)
 bash deployment/setup_runpod.sh
 
-# 2. Activate the env (source, not execute)
+# 3. Activate caches (source, not execute)
 source deployment/activate.sh
 
-# 3. Start the inference server (background, ~2 min warm-up)
+# 4. Start the inference server (background)
 bash deployment/start_server.sh
 tail -f logs/server-*.log
 ```
 
 When you see `INFO:websockets.server:server listening on 0.0.0.0:5000`, you're ready.
+
+**Warm-up time:** ~2–4 min if `/workspace` already has checkpoints + HF/Triton cache; **~15 min** on first B200/H200 boot (Wan2.1 download + JIT compile). See [`docs/05_deployment_b200.md`](docs/05_deployment_b200.md).
 
 For the full step-by-step (with manual fallback, troubleshooting, network exposure options) see [`docs/01_deployment_runpod.md`](docs/01_deployment_runpod.md).
 
@@ -89,6 +96,7 @@ graph TB
     Client --> Template[robot_client_template.py]
     Client --> CtrlYml[deoxys_configs/]
 
+    Deploy --> Prefetch[prefetch_models.sh]
     Deploy --> Setup[setup_runpod.sh]
     Deploy --> StartSh[start_server.sh]
     Deploy --> Activate[activate.sh]
@@ -117,6 +125,7 @@ graph TB
 | [`docs/02_protocol_reference.md`](docs/02_protocol_reference.md) | Writing a custom client or debugging the wire format |
 | [`docs/03_research_findings.md`](docs/03_research_findings.md) | Understanding *why* gripper / control / camera choices are what they are (with source citations) |
 | [`docs/04_client_integration.md`](docs/04_client_integration.md) | Wiring a real robot, especially Franka/Deoxys |
+| [`docs/05_deployment_b200.md`](docs/05_deployment_b200.md) | **B200 second deploy** — prefetch, startup vs inference timing, pitfalls |
 
 ---
 
@@ -127,9 +136,9 @@ The only files **not** present in upstream:
 - `client/deoxys_client.py` — Franka/Deoxys reference client (not provided upstream)
 - `client/robot_client_template.py` — Generic template with hardware abstraction
 - `client/deoxys_configs/dreamzero-joint-impedance.yml` — Tuned controller config
-- `deployment/setup_runpod.sh`, `start_server.sh`, `activate.sh` — RunPod deployment scripts
-- `docs/*.md` — Deployment + protocol + findings documentation
-- `runs/*` — Tested-on-H200 evidence
+- `deployment/prefetch_models.sh`, `setup_runpod.sh`, `start_server.sh`, `activate.sh` — RunPod deployment scripts
+- `docs/*.md` — Deployment + protocol + findings documentation (incl. B200 notes)
+- `runs/*` — Tested-on-H200 / B200 evidence
 
 Everything under [`server/`](server/) is verbatim from upstream and remains under their Apache-2.0 license. See [`NOTICE`](NOTICE) for full attribution.
 

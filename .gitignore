@@ -129,6 +129,7 @@ video_pred_output*/
 # ── Project-specific (RunPod deploy) ────────────────────────────────────────
 # Local environment & caches
 .venv/
+.python-interpreter
 .cache/
 
 # Logs (we ship a single trimmed sample under runs/server.log.tail)

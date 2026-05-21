@@ -1,8 +1,10 @@
 # DreamZero Inference — RunPod Deployment Guide
 
-End-to-end recipe to bring up the DreamZero-DROID 14B inference server on a fresh RunPod pod, validated on **NVIDIA H200 (143 GB)** with PyTorch 2.8 + CUDA 12.8.
+End-to-end recipe to bring up the DreamZero-DROID 14B inference server on a fresh RunPod pod, validated on **NVIDIA H200 (143 GB)** and **B200 (183 GB)** with PyTorch 2.8 + CUDA 12.8.
 
 The same recipe works on any single H100 80 GB or larger; the model fits in ~45 GB of VRAM in bfloat16.
+
+For B200-specific timings (first vs second boot, prefetch, flash-attn wheel), see [`05_deployment_b200.md`](05_deployment_b200.md).
 
 ---
 
@@ -21,6 +23,7 @@ The `runpod/pytorch:2.4.0-py3.11-cuda12.4-devel` image works. So does any "PyTor
 
 | GPU | VRAM | Tested | Notes |
 |---|---|---|---|
+| B200 | 183 GB | yes | ~45 GB used; steady inference ~2.8 s/chunk — see [05](05_deployment_b200.md) |
 | H200 | 143 GB | yes | ~45 GB used, plenty of headroom |
 | H100 80 GB | 80 GB | upstream-tested | Targeted by upstream README |
 | A100 80 GB | 80 GB | not tested | should work; flash-attn supported |
@@ -60,10 +63,20 @@ cd /workspace
 git clone <YOUR-REPO-URL> dreamzero-runpod-deploy
 cd dreamzero-runpod-deploy
 
+# Optional but recommended: prefetch Wan2.1 (~77 GB) + DreamZero-DROID (61 GB)
+bash deployment/prefetch_models.sh
+
 bash deployment/setup_runpod.sh
 ```
 
-That script does everything in [§3](#3-manual-setup-step-by-step) for you. It is idempotent — rerun it any time. Expect **15-25 minutes total** (most of it is the 61 GB model download).
+That script does everything in [§3](#3-manual-setup-step-by-step) for you. It is idempotent — rerun it any time.
+
+**Time expectations:**
+
+| Scenario | Setup + server listen |
+|---|---|
+| Cold volume (no cache) | **15–25 min** (downloads + first JIT compile on B200) |
+| Warm `/workspace` (prefetch done) | **5–10 min** setup; **2–4 min** server listen |
 
 When it finishes:
 

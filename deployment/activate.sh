@@ -27,6 +27,26 @@ export TRITON_CACHE_DIR="${REPO_ROOT}/.cache/triton"
 
 mkdir -p "${UV_CACHE_DIR}" "${PIP_CACHE_DIR}" "${HF_HOME}" "${TORCH_HOME}" "${TRITON_CACHE_DIR}"
 
+# shellcheck source=_common.sh
+if [ -f "${SCRIPT_DIR}/_common.sh" ]; then
+    # shellcheck disable=SC1091
+    source "${SCRIPT_DIR}/_common.sh"
+    dreamzero_export_caches "${REPO_ROOT}"
+    if [ -f "${REPO_ROOT}/.python-interpreter" ]; then
+        export PYTHON="$(cat "${REPO_ROOT}/.python-interpreter")"
+    else
+        export PYTHON="$(dreamzero_select_python "${REPO_ROOT}")"
+    fi
+fi
+
 cd "${REPO_ROOT}"
-echo "DreamZero venv activated at ${REPO_ROOT}"
-echo "Python: $(python --version)"
+echo "DreamZero env at ${REPO_ROOT}"
+if [ -n "${VIRTUAL_ENV:-}" ]; then
+    echo "venv: ${VIRTUAL_ENV}"
+fi
+if [ -n "${PYTHON:-}" ]; then
+    echo "PYTHON=${PYTHON} ($(${PYTHON} --version 2>&1))"
+else
+    echo "Python: $(python --version 2>&1)"
+fi
+echo "HF_HOME=${HF_HOME:-not set}"
